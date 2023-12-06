@@ -18,7 +18,7 @@ const WordsForm = ({ onSubmit }) => {
   }
 
   return (
-    <form class="WordsForm" onSubmit={handleSubmit}>
+    <form className="WordsForm" onSubmit={handleSubmit}>
       <h2>Submit the words below to generate a story!</h2>
 
       <label htmlFor="adj1">adjective</label>

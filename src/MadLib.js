@@ -9,8 +9,14 @@ const MadLib = () => {
   const [submittedData, setSubmittedData] = useState(null);
 
   const handleFormSubmit = (formData) => {
-    setSubmittedData(formData);
-    console.log(formData);
+
+    const allWordsFilled = Object.values(formData).every((value) => value.trim() !== '');
+
+    if (allWordsFilled) {
+      setSubmittedData(formData);
+    } else {
+      alert('Please fill out all words before submitting.');
+    }
   };
 
   const handleCreateAnotherStory = () => {
