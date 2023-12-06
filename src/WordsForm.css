@@ -1,0 +1,19 @@
+/* WordsForm.css */
+.WordsForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; /* Adjust the width as needed */
+  margin: auto; /* Center the form */
+}
+
+.WordsForm label {
+  margin-bottom: 5px; /* Adjust the vertical space between label and input */
+}
+
+.WordsForm input {
+  margin-bottom: 10px; /* Adjust the vertical space between label/input pairs */
+}
+
+.WordsForm button {
+  margin-top: 10px; /* Adjust the space above the button */
+}
